@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+   char str [225];
+   int length,vowel=0,count=0,ind=0;
+   printf("input sentence:");
+   gets(str);
+   while (str[ind]!='\0')
+   {
+       if(str[ind]=='a' || str[ind]=='e' || str[ind]=='i' || str[ind]=='o' || str[ind]=='u')
+        str[ind]=str[ind]-32;
+       ind++;
+        if(str[ind]=='a' || str[ind]=='e' || str[ind]=='i' || str[ind]=='o' || str[ind]=='u')
+            vowel=vowel+1;
+        else
+            count=count+1;
+
+   }
+ printf("\n converted string:");
+ puts(str);
+length=strlen(str);
+printf("\n string length: %d",length);
+
+printf("\n number of vowels:%d",vowel);
+printf("\n number of consonants: %d",count);
+
+    return 0;
+}
