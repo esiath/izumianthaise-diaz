@@ -10,10 +10,10 @@ int main ()
 
 	printf("\n\n Append multiple lines at the end of a text file :\n");
 	printf("------------------------------------------------------\n");
-	printf(" Input the file name to be opened : ");
+	printf(" Input the file location : ");
 	scanf("%s",fname);
     fptr = fopen(fname, "a");
-    printf(" Input the number of lines to be written : ");
+    printf(" Input how many lines to be appended: ");
     scanf("%d", &n);
     printf(" The lines are : \n");
     for(i = 0; i < n+1;i++)
